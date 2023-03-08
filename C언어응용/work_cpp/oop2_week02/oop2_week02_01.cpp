@@ -30,13 +30,26 @@ int main() {
 	//int arr[4] = { 0 };	// [0] ~ [3] : 0으로 초기화
 	//arr[0] = -9;
 	//arr[3] = 30000;
+	// 
+	//for (int i = 0; i < 4; i++) {
+	//	cout << arr[i] << endl;
+	//}
 
+	// 포인터 확인! 
 	int arr[4] = { -9, 0, 0, 30000 };
+	int* parr = &arr[0];	// *4바이트씩 증가
 
 	for (int i = 0; i < 4; i++) {
-		cout << arr[i] << endl;
+		cout << parr << endl;	// 같은 방에 배정받는다
+	} 
+
+	for (int i = 0; i < 4; i++) {
+		cout << parr + i << endl;	// 4 바이트씩 증가(번지값) 
+	// -> 방을 따로 배정받는다 0번방 - 4번방 - 8번방 - 12번방
 	}
-	// cout << arr[2] << endl;
+
+
+
 		
 
 
