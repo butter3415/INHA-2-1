@@ -7,7 +7,7 @@ int main() {
 	void* ps;
 	ps = letters;
 
-	// Ranged based for loop	 범위 기반 코드 
+	// Ranged based for loop	 범위 기반 for 문 
 	for (auto letter : letters) {	// auto i : 배열
 		cout << letter;
 	}
@@ -33,7 +33,8 @@ int main() {
 	    print(subjects[i])
 	*/
 
-
+	for (int i : {1, 3, 5, 7, -9})
+		cout << i << " ";
 
 
 
